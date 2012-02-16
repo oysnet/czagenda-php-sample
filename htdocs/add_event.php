@@ -248,26 +248,7 @@
   		<div id="maintags">
     		<fieldset class="tab">
     			<legend>Informations</legend>
-    			
-    			<?php if (!(is_null($event) || empty($event->id))) {?>
     			<p>
-  	        <label for="id">Id</label> 
-  	        <input type="text" id="id" readonly='readonly' name="id" value="<?php echo $event->id?>" >
-  	      </p>
-  	      
-  	      <p>
-  	        <label for="createDate">Create date</label> 
-  	        <input type="text" id="createDate" readonly='readonly' name="createDate" value="<?php echo $event->createDate?>" >
-  	      </p>
-  	      
-  	      <p>
-  	        <label for="updateDate">Update date</label> 
-  	        <input type="text" id="updateDate" readonly='readonly' name="updateDate" value="<?php echo $event->updateDate?>" >
-  	      </p>
-  	      
-    			<?php } ?>
-    			
-  	  		<p>
   	        <label for="title">Title</label> 
   	        <input type="text" id="title" name="title" value="<?php if (!(is_null($event) || empty($event->event->title))) echo $event->event->title;?>" required="required">
   	      </p>
