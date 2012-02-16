@@ -1,0 +1,19 @@
+This project is a php sample using czagenda api
+
+Demo
+
+http://czagenda-php-sample.beta.oxys.net/add_event.php
+
+Install
+
+1. Create new api key on test server : http://auth.czagenda.oxys.net/oauth/register/
+2. Copy settings.sample.php to settings.php and fill consumer secret and key.
+
+More
+
+Read the czagenda api documentation on http://czagenda-api.readthedocs.org/en/latest/
+
+This code is using :
+  - php-oauth  : http://code.google.com/p/oauth-php/
+  - openlayers : http://www.openlayers.org/
+  - jquery-ui : http://jqueryui.com/
