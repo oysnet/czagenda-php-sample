@@ -9,6 +9,13 @@ if (empty($_GET['redirect_to'])) {
 	$redirect_to = $_GET['redirect_to'];
 }
 
+
+if (!empty($_['oauth_callback_confirmed']) && $_['oauth_callback_confirmed'] == 'False') {
+	
+	die("You have not authorized the application");
+	
+}
+
 try
 {
 	//  STEP 1:  If we do not have an OAuth token yet, go get one
