@@ -10,7 +10,7 @@ if (empty($_GET['redirect_to'])) {
 }
 
 
-if (!empty($_['oauth_callback_confirmed']) && $_['oauth_callback_confirmed'] == 'False') {
+if (!empty($_GET['oauth_callback_confirmed']) && $_GET['oauth_callback_confirmed'] == 'False') {
 	
 	die("You have not authorized the application");
 	
